@@ -9,17 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.22.0",
+    "ky": "^0.23.0",
+    "ky-universal": "^0.8.2",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "ky": "^0.23.0",
     "react-query": "^3.5.0",
-    "web-streams-polyfill": "^3.0.3",
-    "ky-universal": "^0.8.2",
-    "resolve-from": "^5.0.0"
+    "resolve-from": "^5.0.0",
+    "web-streams-polyfill": "^3.0.3"
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "msw": "^0.35.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

@@ -1,14 +1,14 @@
 import React from 'react'
 import { dehydrate, QueryClient } from 'react-query'
-import { Layout, Header, InfoBox, PostList } from '../components'
-import { fetchPosts } from '../hooks'
+import { Layout, Header, InfoBox, Name } from '../components'
+import { fetchName } from '../hooks'
 
 const Home = () => {
   return (
     <Layout>
       <Header />
       <InfoBox>ℹ️ This page shows how to use SSG with React-Query.</InfoBox>
-      <PostList />
+      <Name />
     </Layout>
   )
 }
@@ -16,7 +16,7 @@ const Home = () => {
 export async function getStaticProps() {
   const queryClient = new QueryClient()
 
-  await queryClient.prefetchQuery(['posts', 10], () => fetchPosts(10))
+  await queryClient.prefetchQuery('name', () => fetchName())
 
   return {
     props: {

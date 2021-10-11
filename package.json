@@ -6,23 +6,33 @@
     "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@babel/core": "^7.15.8",
     "axios": "^0.22.0",
-    "ky": "^0.23.0",
-    "ky-universal": "^0.8.2",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-query": "^3.5.0",
-    "resolve-from": "^5.0.0",
-    "web-streams-polyfill": "^3.0.3"
+    "react-query": "^3.5.0"
   },
   "devDependencies": {
+    "@testing-library/dom": "7.31.2",
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "11.2.7",
+    "@testing-library/react-hooks": "7.0.0",
+    "@testing-library/user-event": "13.1.9",
+    "babel-jest": "27.0.2",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
-    "msw": "^0.35.0"
+    "jest": "27.0.4",
+    "jest-canvas-mock": "2.3.1",
+    "jest-dom": "4.0.0",
+    "jest-watch-typeahead": "0.6.4",
+    "msw": "^0.35.0",
+    "next-router-mock": "^0.5.2"
   },
   "msw": {
     "workerDirectory": "public"

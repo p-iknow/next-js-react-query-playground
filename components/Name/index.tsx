@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
+
 import { useName } from '../../hooks/useName'
 
 export const Name = () => {
-  const { data, isLoading, isFetching } = useName()
+  const { data, isIdle, isLoading, isError } = useName();
 
-  if (isLoading) return <div>Loading</div>
+  if (isLoading || isIdle) return <div>Loading</div>
+
+  if (isError) {
+    throw new Error('error');
+  }
 
   return (
     <section>

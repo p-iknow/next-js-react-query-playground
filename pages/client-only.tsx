@@ -1,5 +1,5 @@
+import { Layout, Header, InfoBox, Name } from '@components'
 import React from 'react'
-import { Layout, Header, InfoBox, Name } from '../components'
 
 const ClientOnly = () => {
   return (

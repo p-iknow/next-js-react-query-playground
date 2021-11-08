@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export const Layout: React.FC = ({ children }) => {
   return (
@@ -6,9 +6,8 @@ export const Layout: React.FC = ({ children }) => {
       {children}
       <style jsx global>{`
         * {
-          font-family: Menlo, Monaco, 'Lucida Console', 'Liberation Mono',
-            'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New',
-            monospace, serif;
+          font-family: Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono',
+            'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
         }
         body {
           margin: 0;
@@ -45,5 +44,5 @@ export const Layout: React.FC = ({ children }) => {
         }
       `}</style>
     </main>
-  )
-}
+  );
+};

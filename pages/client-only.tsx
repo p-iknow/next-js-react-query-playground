@@ -1,5 +1,5 @@
-import { Layout, Header, InfoBox, Name } from '@components'
-import React from 'react'
+import { Layout, Header, InfoBox, Name } from '@components';
+import React from 'react';
 
 const ClientOnly = () => {
   return (
@@ -8,7 +8,7 @@ const ClientOnly = () => {
       <InfoBox>ℹ️ This data is loaded on client and not prefetched</InfoBox>
       <Name />
     </Layout>
-  )
-}
+  );
+};
 
-export default ClientOnly
+export default ClientOnly;

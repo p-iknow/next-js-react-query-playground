@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const InfoBox: React.FC = ({ children }) => (
   <div className="info">
@@ -14,6 +14,6 @@ const InfoBox: React.FC = ({ children }) => (
     `}</style>
     {children}
   </div>
-)
+);
 
-export { InfoBox }
+export { InfoBox };

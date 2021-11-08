@@ -1,5 +1,5 @@
 
-import { render as rtlRender } from '@testing-library/react';
+import { render as rtlRender, RenderOptions, RenderResult } from '@testing-library/react';
 import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
@@ -12,10 +12,10 @@ export const queryClient = new QueryClient({
 });
 
 const render = (
-  ui,
-  ...renderOptions
+  ui: JSX.Element,
+  ...renderOptions: Omit<RenderOptions, 'queries'>[]
 ) => {
-  const Wrapper = ({ children }) => (
+  const Wrapper: React.FC = ({ children }) => (
     <QueryClientProvider client={queryClient}>
       {children}
     </QueryClientProvider>

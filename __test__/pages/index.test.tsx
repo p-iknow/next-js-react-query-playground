@@ -23,6 +23,6 @@ it('SSR prefetch test' ,() => {
 
 	render(<Home/>)
 
-	expect(screen.getByText('John Doe')).toBeInTheDocument(); 
+	expect(screen.getByText('John Doe')).toBeInTheDocument();
 
 })

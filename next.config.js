@@ -32,7 +32,9 @@ Module.prototype.require = function (modulePath) {
   return originalRequire.call(this, modulePath)
 }
 
+/** @type {import('next').NextConfig} */
 module.exports = {
+  reactStrictMode: true,
   webpack: config => {
     config.resolve = {
       ...config.resolve,

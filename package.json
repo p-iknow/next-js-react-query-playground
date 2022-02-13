@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.15.8",
+    "@sentry/nextjs": "^6.17.7",
     "axios": "^0.22.0",
     "next": "11.1.2",
     "react": "17.0.2",

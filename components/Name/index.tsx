@@ -1,12 +1,13 @@
 import { useName } from '@hooks';
+import { AxiosError } from 'axios';
 
 export const Name = () => {
-  const { data, isIdle, isLoading, isError } = useName();
+  const { data, isIdle, isLoading, isError, error } = useName();
 
   if (isLoading || isIdle) return <div>Loading</div>;
 
   if (isError) {
-    throw new Error('error');
+    throw error;
   }
 
   return (

@@ -1,5 +1,4 @@
 import { useName } from '@hooks';
-import { AxiosError } from 'axios';
 
 export const Name = () => {
   const { data, isIdle, isLoading, isError, error } = useName();

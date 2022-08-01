@@ -17,8 +17,8 @@
     "paths": {
       "@hooks": ["hooks"],
       "@hooks/*": ["hooks/*"],
-      "@containers": ["containers"],
-      "@containers/*": ["containers/*"],
+      "@hocs": ["hocs"],
+      "@hocs/*": ["hocs/*"],
       "@components": ["components"],
       "@components/*": ["components/*"],
       "@mocks": ["mocks"],

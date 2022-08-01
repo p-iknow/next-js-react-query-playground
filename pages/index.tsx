@@ -1,7 +1,7 @@
 import { Layout, Header, InfoBox, Name } from '@components';
 import ErrorFallback from '@components/ErrorFallback';
 import LoadingFallback from '@components/LoadingFallback';
-import AsyncBoundary from '@containers/async-boundary';
+import AsyncBoundary from 'hocs/async-boundary';
 import { fetchName } from '@hooks';
 import React from 'react';
 import { dehydrate, QueryClient } from 'react-query';

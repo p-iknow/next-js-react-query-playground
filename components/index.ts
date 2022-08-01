@@ -1,4 +1,2 @@
-export * from './Layout';
-export * from './Header';
-export * from './InfoBox';
+export * from './common';
 export * from './Name';

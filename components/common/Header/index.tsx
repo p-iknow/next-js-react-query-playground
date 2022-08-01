@@ -10,6 +10,11 @@ export const Header = () => {
       <Link href="/">
         <a className={pathname === '/' ? 'is-active' : ''}>Home</a>
       </Link>
+      <Link href="/react-query-suspense">
+        <a className={pathname === '/react-query-suspense' ? 'is-active' : ''}>
+          React-Query-Suspense
+        </a>
+      </Link>
       <Link href="/client-only">
         <a className={pathname === '/client-only' ? 'is-active' : ''}>Client-Only</a>
       </Link>

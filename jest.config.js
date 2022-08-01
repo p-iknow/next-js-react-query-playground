@@ -9,6 +9,7 @@ module.exports = {
     '@/(.*)$': '<rootDir>/src/$1',
     '@mocks/(.*)$': '<rootDir>/mocks/$1',
     '@pages/(.*)$': '<rootDir>/pages/$1',
+    '@containers/(.*)$': '<rootDir>/containers/$1',
     '@components': '<rootDir>/components',
     '@components/(.*)$': '<rootDir>/components/$1',
     '@hooks': '<rootDir>/hooks',

@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,42 +15,20 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@hooks": [
-        "hooks"
-      ],
-      "@hooks/*": [
-        "hooks/*"
-      ],
-      "@components": [
-        "components"
-      ],
-      "@components/*": [
-        "components/*"
-      ],
-      "@mocks": [
-        "mocks"
-      ],
-      "@mocks/*": [
-        "mocks/*"
-      ],
-      "@pages": [
-        "pages"
-      ],
-      "@pages/*": [
-        "pages/*"
-      ]
+      "@hooks": ["hooks"],
+      "@hooks/*": ["hooks/*"],
+      "@containers": ["containers"],
+      "@containers/*": ["containers/*"],
+      "@components": ["components"],
+      "@components/*": ["components/*"],
+      "@mocks": ["mocks"],
+      "@mocks/*": ["mocks/*"],
+      "@pages": ["pages"],
+      "@pages/*": ["pages/*"]
     },
     "incremental": true
   },
-  "types": [
-    "@types/jest"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "types": ["@types/jest"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

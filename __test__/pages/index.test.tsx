@@ -19,7 +19,7 @@ afterAll(() => {
 });
 
 jest.mock('next/router', () => require('next-router-mock'));
-it('SSR prefetch test', () => {
+xit('SSR prefetch test', () => {
   queryClient.setQueryData('name', { name: 'John Doe' });
 
   render(<Home />);

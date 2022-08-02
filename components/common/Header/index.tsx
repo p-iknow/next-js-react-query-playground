@@ -15,6 +15,11 @@ export const Header = () => {
           React-Query-Suspense
         </a>
       </Link>
+      <Link href="/react-query-suspense-parallel">
+        <a className={pathname === '/react-query-suspense-parallel' ? 'is-active' : ''}>
+          React-Query-Suspense-Parallel
+        </a>
+      </Link>
       <Link href="/client-only">
         <a className={pathname === '/client-only' ? 'is-active' : ''}>Client-Only</a>
       </Link>

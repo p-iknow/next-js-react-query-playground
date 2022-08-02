@@ -1,11 +1,12 @@
 import { Layout, Header, InfoBox, ErrorFallback, LoadingFallback } from '@components';
 import AsyncBoundary from '@hocs/async-boundary';
-import { fetchName } from '@hooks';
-import { fetchAge } from '@hooks/use-age';
+import { fetchAge, fetchName } from '@hooks';
 import React from 'react';
 import { useQuery } from 'react-query';
 
-const ReactQuerySuspense = () => {
+const ReactQuerySuspenseParallel = () => {
+  useQuery('name', () => fetchName());
+  useQuery('age', () => fetchAge());
   return (
     <AsyncBoundary fallback={<ErrorFallback />} pendingFallback={<LoadingFallback />}>
       <Layout>
@@ -39,9 +40,9 @@ export const Age = () => {
 
   return (
     <section>
-      <span>Age: </span> <span>{data?.age ?? ''}</span>
+      <span>Age: </span> <span>{data?.age ?? 0}</span>
     </section>
   );
 };
 
-export default ReactQuerySuspense;
+export default ReactQuerySuspenseParallel;

@@ -10,18 +10,20 @@ export const Header = () => {
       <Link href="/">
         <a className={pathname === '/' ? 'is-active' : ''}>Home</a>
       </Link>
-      <Link href="/react-query-suspense">
-        <a className={pathname === '/react-query-suspense' ? 'is-active' : ''}>
-          React-Query-Suspense
+      <Link href="/react-query-without-suspense">
+        <a className={pathname === '/react-query-without-suspense' ? 'is-active' : ''}>
+          React-Query-Without-Suspense
+        </a>
+      </Link>
+      <Link href="/react-query-suspense-sequential">
+        <a className={pathname === '/react-query-suspense-sequential' ? 'is-active' : ''}>
+          React-Query-Suspense-Sequential
         </a>
       </Link>
       <Link href="/react-query-suspense-parallel">
         <a className={pathname === '/react-query-suspense-parallel' ? 'is-active' : ''}>
           React-Query-Suspense-Parallel
         </a>
-      </Link>
-      <Link href="/client-only">
-        <a className={pathname === '/client-only' ? 'is-active' : ''}>Client-Only</a>
       </Link>
       <style jsx>{`
         header {

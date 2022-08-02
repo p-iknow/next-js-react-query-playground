@@ -9,7 +9,7 @@ const Home = () => {
     <AsyncBoundary fallback={<ErrorFallback />} pendingFallback={<LoadingFallback />}>
       <Layout>
         <Header />
-        <InfoBox>ℹ️ This page shows how to use SSG with React-Query.</InfoBox>
+        <InfoBox>ℹ️ This page shows how to use multiple React-Query.</InfoBox>
         <Name />
         <button
           type="button"

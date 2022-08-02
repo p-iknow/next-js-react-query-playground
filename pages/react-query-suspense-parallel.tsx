@@ -5,13 +5,17 @@ import React from 'react';
 import { useQuery } from 'react-query';
 
 const ReactQuerySuspenseParallel = () => {
+  // it like a prefetch call for parallel api call
   useQuery('name', () => fetchName());
   useQuery('age', () => fetchAge());
   return (
     <AsyncBoundary fallback={<ErrorFallback />} pendingFallback={<LoadingFallback />}>
       <Layout>
         <Header />
-        <InfoBox>ℹ️ This data is loaded on client and not prefetched</InfoBox>
+        <InfoBox>
+          ℹ️React query with suspense option. But the api call is parallelly because of prefetched
+          use query.
+        </InfoBox>
         <Name />
       </Layout>
     </AsyncBoundary>

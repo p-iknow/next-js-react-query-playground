@@ -10,7 +10,10 @@ const ReactQuerySuspense = () => {
     <AsyncBoundary fallback={<ErrorFallback />} pendingFallback={<LoadingFallback />}>
       <Layout>
         <Header />
-        <InfoBox>ℹ️ This data is loaded on client and not prefetched</InfoBox>
+        <InfoBox>
+          ℹ️React query with suspense option. The api call is sequentially called because of
+          suspense option.
+        </InfoBox>
         <Name />
       </Layout>
     </AsyncBoundary>

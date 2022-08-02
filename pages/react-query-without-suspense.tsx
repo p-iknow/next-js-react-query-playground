@@ -26,7 +26,7 @@ const ReactQueryWithoutSuspense = () => {
   return (
     <Layout>
       <Header />
-      <InfoBox>react query without suspense option</InfoBox>
+      <InfoBox>ℹ️ React query without suspense option</InfoBox>
       <Name />
     </Layout>
   );
@@ -36,9 +36,12 @@ export const Name = () => {
   const { data } = useQuery('name', () => fetchName());
 
   return (
-    <section>
-      <span>Name </span> <span>{data?.name ?? ''}</span>
-    </section>
+    <>
+      <section>
+        <span>Name </span> <span>{data?.name ?? ''}</span>
+      </section>
+      <Age />
+    </>
   );
 };
 

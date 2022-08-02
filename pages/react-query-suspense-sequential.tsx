@@ -11,7 +11,7 @@ const ReactQuerySuspense = () => {
       <Layout>
         <Header />
         <InfoBox>
-          ℹ️React query with suspense option. The api call is sequentially called because of
+          ℹ️ React query with suspense option. The api call is sequentially called because of
           suspense option.
         </InfoBox>
         <Name />

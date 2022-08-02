@@ -13,7 +13,7 @@ const ReactQuerySuspenseParallel = () => {
       <Layout>
         <Header />
         <InfoBox>
-          ℹ️React query with suspense option. But the api call is parallelly because of prefetched
+          ℹ️ React query with suspense option. But the api call is parallelly because of prefetched
           use query.
         </InfoBox>
         <Name />
